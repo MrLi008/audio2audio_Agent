@@ -21,6 +21,7 @@ import json
 # 初始化OpenAI客户端
 client = openai.OpenAI(api_key=os.environ["OPENAI_API_KEY"], base_url="https://api.openai.com/v1/")
 
+
 def transcribe_audio(audio_path: str) -> str:
     """将语音文件转为文本"""
     try:
